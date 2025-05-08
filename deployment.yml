@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: sirisha
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: uber
