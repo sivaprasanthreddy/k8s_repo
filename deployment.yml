@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: saikrishna
+  name: my-svc01
 spec:
   type: LoadBalancer
   selector:
