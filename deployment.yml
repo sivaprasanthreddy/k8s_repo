@@ -2,16 +2,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sirisha
+  name: mydep01
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: uber
+      app: my-app
   template:
     metadata:
       labels:
-        app: uber
+        app: my-app
     spec:
       containers:
         - name: cont1
@@ -28,8 +28,9 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: uber
+    app: my-app
   ports:
     - port: 80
       targetPort: 80
+      nodePort: 30001
       
